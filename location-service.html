@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -23,6 +25,23 @@
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  <style>
+    @font-face {
+      font-family: 'myFirstFont';
+      src: url('https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/assets/font/Fonts/WEB/fonts/Gambarino-Regular.woff2') format('woff2'), ;
+    }
+
+    .rotate-image {
+      transform: rotate(0deg);
+      /* Awalnya tidak berputar */
+      transition: transform 5s ease-in-out;
+    }
+
+    .rotate-active {
+      transform: rotate(360deg);
+      /* Berputar 360 derajat */
+    }
+  </style>
   <title>Document</title>
 </head>
 
@@ -107,20 +126,16 @@
   <div class="lg:ml-[18.75rem] overflow-hidden">
     <!-- section hero -->
     <section class="relative h-screen flex items-center justify-center">
-      <!-- Video Background -->
-      <!-- <video class="absolute top-0 left-0 w-full h-full object-cover z-[-1]" autoplay muted loop>
-        <source src="https://hilmirazib.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/assets/videos/2162695_Festival_Food_1920x1080.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video> -->
       <video class="absolute top-0 left-0 w-full h-full object-cover z-[-1]" autoplay muted loop>
         <source src="./assets/videos/571876_Sushi_Food_1920x1080.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
+
       <!-- Overlay dengan opacity -->
       <div class="absolute inset-0 bg-black bg-opacity-50 z-[-1]"></div>
 
       <div class="relative z-10 text-white text-center">
-        <h1 class="text-6xl font-bold mb-6">Embrace the Art of <br> Celebration</h1>
+        <h1 class="text-6xl font-bold mb-6" style="font-family: myFirstFont;">Embrace the Art of <br> Celebration</h1>
         <p class="text-2xl mb-6">
           Experience Unforgettable Moments with Sushi House Party<br />
           - Over 20 Years of Experience! -
@@ -151,10 +166,6 @@
             </li>
           </ul>
         </div>
-
-
-
-
         <!-- Button for Booking Modal -->
         <a href="#" class="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-md uppercase">
           Book Your Party Now!
@@ -162,26 +173,13 @@
       </div>
     </section>
     <!-- section about -->
-    <div class="md:px-28 px-10 md:py-20 py-10">
-      <div class="flex items-center text-center justify-center gap-10 flex-col md:flex-row">
-        <img src="/assets/images/seafood-sushi-dish-with-details-simple-black-background.jpg" alt=""
-          class="h-4/5 md:w-1/3 w-1/2 rounded-md">
-        <div class="space-y-5">
-          <p class="font-bold text-3xl">Welcome to Sushi Party Missouri</p>
-          <p class="text-lg">Where we invite you to experience a night of us take care
-            for your dining experiences.
-            At Sushi House Party we serving everything so fresh and sliceing fresh fish in front of your family/clients
-            we believe
-            every gathering is an opportunity to create memories. Our premium sushi is more than a meal it's a palette
-            of flavors,
-            artfully crafted to elevate your home gatherings and celebrations. With us, you can relax and savor the
-            moment,
-            indulging in the party as much as your guests
-          </p>
-          <a href="#"
-            class="inline-block text-lg bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-md uppercase">
-            Meet Our Chef
-          </a>
+    
+    <!-- connect with us -->
+    <div class="py-12 px-7 bg-black">
+      <div class="p-5 flex flex-col md:flex-row items-center justify-center md:gap-10 gap-5 bg-white rounded-md">
+        <div class="text-center">
+          <p class="text-3xl font-bold mb-4" style="font-family: myFirstFont;">Comming soon Maps</p>
+         
         </div>
       </div>
     </div>
@@ -189,14 +187,14 @@
     <!-- footer -->
     <footer class="bg-black text-white">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div class="md:flex md:justify-between">
+        <div class="md:flex md:justify-between gap-20">
           <div class="mb-6 md:mb-0">
             <p class="uppercase text-xl font-bold mb-4">About Us</p>
             <p class="text-lg">we served japanase food since 2019 and grow as holding company under name kasabi, we
               located at st peters, warrenton , hazelwood and festus, at kasabi quality and innovation are at the heart
               of what we do. Our commitment to using the premium ingredients and adding a contemporary twist to classic
               styles has distinguished us in the culinary landscape. We take pride in ensuring that each event we cater
-              is a showcase of our love for sushi, offering a unique and memorable dining experience.
+              is a showcase of our love for sushi, offering a unique and memorable dining experience.</p>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 justify-right flex-shrink-0">
             <div>
@@ -207,7 +205,7 @@
                 <li class="mb-4">
                   <a href="https://flowbite.com/" class="hover:underline">Our Services</a>
                 </li>
-                <li>
+                <li class="mb-4">
                   <a href="https://tailwindcss.com/" class="hover:underline">Meet Our Chef</a>
                 </li>
                 <li class="flex">
@@ -228,7 +226,7 @@
                   <a href="#" class="hover:underline">Galley</a>
                 </li>
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Get Started</a>
+                  <a href="#" class="hover:underline">Location Service</a>
                 </li>
                 <li>
                   <a href="#" class="hover:underline">Call Now</a>
@@ -291,7 +289,54 @@
         </div>
       </div>
     </footer>
+
+
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script>
+    // Inisialisasi AOS untuk animasi fade-in
+    AOS.init({
+      once: true, // Memastikan fade-in hanya terjadi sekali
+    });
+
+    // Function untuk mengecek apakah elemen berada di viewport
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function rotateImage(image) {
+      image.classList.add('rotate-active');
+      setTimeout(() => {
+        image.classList.remove('rotate-active');
+      }, 5000); // Hapus class setelah 5 detik, sesuai durasi animasi CSS
+    }
+
+    const rotatingElements = document.querySelectorAll('.rotate-image');
+    let currentIndex = 0;
+
+    function checkScroll() {
+      rotatingElements.forEach((element, index) => {
+        if (isInViewport(element) && index === currentIndex) {
+          rotateImage(element);
+          currentIndex = (currentIndex + 1) % rotatingElements.length; // Berpindah ke elemen berikutnya
+        }
+      });
+    }
+
+    window.addEventListener('scroll', checkScroll);
+
+    // Jalankan pengecekan saat halaman pertama kali di-load
+    document.addEventListener('DOMContentLoaded', checkScroll);
+  </script>
+
 </body>
 
 </html>

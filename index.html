@@ -110,12 +110,12 @@
           </a>
         </li>
         <li class="">
-          <a href="#">
+          <a href="https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/location-service">
             Location Service
           </a>
         </li>
         <li class="">
-          <a href="#">
+          <a href="https://wa.me/+16362015892?text=Hi there! 👋 Ready to dive into delicious sushi or need a little help with your order? Just tap the link below to chat with us on WhatsApp! We'll be right here to answer any questions or help you roll into something amazing. 🍣🥢" target="_blank">
             Call Now!
           </a>
         </li>
@@ -273,7 +273,7 @@
           <p class="text-lg mb-10">From small gatherings to large celebrations, our full-service catering handles it
             all. We deliver, set up, and serve, allowing you to be a guest at your own event. Sushi House Party ensures
             a stress-free experience that impresses. </p>
-          <button type="button"
+          <button type="button" onclick="toggleModal()" 
             class="text-red-600 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-sm text-sm py-3 px-6 text-center me-2 mb-2">
             Start Planning Today!</button>
         </div>
@@ -410,6 +410,59 @@
           functions.</div>
       </div>
     </div>
+    <!-- form -->
+    <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+      <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative">
+        <!-- Close Button -->
+        <button onclick="toggleModal()" class="absolute top-2 right-2 text-gray-500 hover:text-gray-800">
+          &times;
+        </button>
+  
+        <!-- Form Header -->
+        <h2 class="text-2xl font-bold mb-4 text-center text-red-600">Let's Plan A Sushi Party!</h2>
+        
+        <!-- Form -->
+        <form class="space-y-4">
+          
+          <div class="flex gap-4">
+            <input type="text" placeholder="First Name" class="w-full p-3 border border-gray-300 rounded">
+            <input type="text" placeholder="Last Name" class="w-full p-3 border border-gray-300 rounded">
+          </div>
+          
+          <div class="flex gap-4">
+            <input type="email" placeholder="Email Address" class="w-full p-3 border border-gray-300 rounded">
+            <input type="tel" placeholder="Phone Number" class="w-full p-3 border border-gray-300 rounded">
+          </div>
+          
+          <div class="flex gap-4">
+            <div class="w-full">
+              <label class="block text-gray-600 mb-1">Do You Have a Timeframe?</label>
+              <select class="w-full p-3 border border-gray-300 rounded">
+                <option>Still Planning</option>
+                <option>1-2 Weeks</option>
+                <option>1 Month</option>
+              </select>
+            </div>
+            
+            <div class="w-full">
+              <label class="block text-gray-600 mb-1">Exact Date</label>
+              <input type="date" class="w-full p-3 border border-gray-300 rounded">
+            </div>
+          </div>
+  
+          <textarea placeholder="Tell us more about your party idea!" class="w-full p-3 border border-gray-300 rounded resize-none" rows="4"></textarea>
+          
+          <!-- Captcha & Submit -->
+          <div class="flex items-center gap-4">
+            <input type="checkbox" id="captcha" class="mr-2">
+            <label for="captcha" class="text-gray-600">I am human</label>
+          </div>
+  
+          <button type="submit" class="w-full bg-red-500 text-white p-3 rounded-lg font-semibold hover:bg-red-600">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <!-- form -->
     <!-- footer -->
     <footer class="bg-black text-white">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -561,6 +614,13 @@
 
     // Jalankan pengecekan saat halaman pertama kali di-load
     document.addEventListener('DOMContentLoaded', checkScroll);
+  </script>
+  <script>
+    function toggleModal() {
+      const modal = document.getElementById('modal');
+      console.log("🚀 ~ toggleModal ~ modal:", modal)
+      modal.classList.toggle('hidden');
+    }
   </script>
 
 </body>
