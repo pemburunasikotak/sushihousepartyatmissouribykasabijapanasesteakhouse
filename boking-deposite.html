@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>sushihousepartyatmissouribykasabijapanasesteakhouse</title>
+  <link rel="icon"
+    href="https://hilmirazib.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/assets/images/wasabi.jpg"
+    type="image/x-icon">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+
+          },
+          fontFamily: {
+            montserrat: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  <style>
+    @font-face {
+      font-family: 'myFirstFont';
+      src: url('https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/assets/font/Fonts/WEB/fonts/Gambarino-Regular.woff2') format('woff2'), ;
+    }
+
+    .rotate-image {
+      transform: rotate(0deg);
+      /* Awalnya tidak berputar */
+      transition: transform 5s ease-in-out;
+    }
+
+    .rotate-active {
+      transform: rotate(360deg);
+      /* Berputar 360 derajat */
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body class="font-montserrat">
+  <div class="absolute z-10 right-0">
+    <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar"
+      type="button"
+      class="p-2 text-sm text-white bg-rose-700 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+      <span class="sr-only">Open sidebar</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path clip-rule="evenodd" fill-rule="evenodd"
+          d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+        </path>
+      </svg>
+    </button>
+  </div>
+
+  <aside id="default-sidebar"
+    class="fixed top-0 left-0 z-40 w-[18.75rem] h-screen transition-transform -translate-x-full lg:translate-x-0 p-5 bg-[#F7F7F7]"
+    aria-label="Sidebar">
+    <div class="h-full">
+      <div class="p-5 mb-1">
+        <a href="#" class="">
+          <img
+            src="https://hilmirazib.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/assets/images/wasabi.jpg"
+            class="h-auto w-full" alt="">
+        </a>
+      </div>
+      <ul class="uppercase space-y-5 font-bold text-center p-5">
+        <li class="">
+          <a href="https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/">
+            Home
+          </a>
+        </li>
+        <li class="">
+          <a href="https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/about">
+            About
+          </a>
+        </li>
+        <li class="">
+          <a href="https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/our-service">
+            Our Service
+          </a>
+        </li>
+        <li class="">
+          <a href="https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/gallery">
+            Gallery
+          </a>
+        </li>
+        <li class="">
+          <a href="https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/gallery">
+            Contact
+          </a>
+        </li>
+        <li class="">
+          <a
+            href="https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/boking-deposite">
+            booking deposit
+          </a>
+        </li>
+        <!-- <li class="">
+          <a href="https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/our-chef">
+            Meet Our Chef
+          </a>
+        </li> -->
+        <li class="">
+          <a
+            href="https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/location-service">
+            Location Service
+          </a>
+        </li>
+        <li class="">
+          <a href="https://wa.me/+16362015892?text=Hi there! 👋 Ready to dive into delicious sushi or need a little help with your order? Just tap the link below to chat with us on WhatsApp! We'll be right here to answer any questions or help you roll into something amazing. 🍣🥢"
+            target="_blank">
+            Call Now!
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <div class="lg:ml-[18.75rem] overflow-hidden">
+    <!-- section hero -->
+    <section class="relative h-screen flex items-center justify-center">
+      <video class="absolute top-0 left-0 w-full h-full object-cover z-[-1]" autoplay muted loop>
+        <source src="./assets/videos/571876_Sushi_Food_1920x1080.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Overlay dengan opacity -->
+      <div class="absolute inset-0 bg-black bg-opacity-50 z-[-1]"></div>
+
+      <div class="relative z-10 text-white text-center">
+        <h1 class="text-6xl font-bold mb-6">Embrace the Art of <br> Celebration</h1>
+        <p class="text-2xl mb-6">
+          Experience Unforgettable Moments with Sushi House Party<br />
+          - Over 20 Years of Experience! -
+        </p>
+
+        <!-- List Icon -->
+        <div class="flex justify-center  mb-14">
+          <ul class="space-y-6">
+            <li class="flex items-center space-x-6">
+              <i class="fas fa-fish text-2xl"></i>
+              <p class="text-xl">Celebrations</p>
+            </li>
+            <li class="flex items-center space-x-6">
+              <i class="fas fa-fish text-2xl"></i>
+              <p class="text-xl">Holiday Parties</p>
+            </li>
+            <li class="flex items-center space-x-6">
+              <i class="fas fa-fish text-2xl"></i>
+              <p class="text-xl">Special Occasions</p>
+            </li>
+            <li class="flex items-center space-x-6">
+              <i class="fas fa-fish text-2xl"></i>
+              <p class="text-xl">Corporate Events</p>
+            </li>
+            <li class="flex items-center space-x-6">
+              <i class="fas fa-fish text-2xl"></i>
+              <p class="text-xl">& More!</p>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-md uppercase">
+          Book Your Party Now!
+        </a>
+      </div>
+    </section>
+
+    <!-- your gallery -->
+    <div>
+      <div class="md:px-28 px-10 md:py-20 py-10">
+        <div class="flex items-center text-center justify-center gap-10 flex-col md:flex-row">
+          <img src="./assets/images/freshness-flavors-japanese-culture-sushi-plate.jpg" alt=""
+            class="h-4/5 md:w-1/3 w-1/2 rounded-md">
+          <div class="space-y-5">
+            <p class="font-bold text-3xl" style="font-family: myFirstFont;">Book Your Event with Sushi Party Atlanta</p>
+            <p class="text-lg">Welcome to the <b>Booking & Deposits</b> page for Sushi Party Atlanta, your gateway to
+              experiencing the finest sushi catering in Atlanta. Whether it’s a private dining experience, a corporate
+              gathering, or a special event, we make it easy to reserve your date and secure your spot with an online
+              deposit. Our streamlined booking system allows clients across Buckhead, Midtown, Sandy Springs, and many
+              other areas in and nearby Atlanta to enjoy world-class sushi catering. We will also travel outside of
+              Georgia. <b>Quality Guarantee</b>: Authentic Japanese sushi made with premium ingredients.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="md:px-28 px-10 md:py-20 py-10">
+        <div class="flex items-center text-center justify-center gap-10 flex-col md:flex-row">
+          <div class="space-y-5">
+            <p class="text-lg">Ready to book your exclusive sushi catering event with Sushi Party Atlanta? Contact the
+              Sushi Party Atlanta Event Director today to reserve your next luxury private party, corporate event, or
+              special occasion. Booking Deposits can be made Through Clover.
+            </p>
+          </div>
+          <img src="./assets/images/freshness-flavors-japanese-culture-sushi-plate.jpg" alt=""
+            class="h-2/5 md:w-1/5 w-1/2 rounded-md">
+          <div class="space-y-5">
+            <p class="text-lg">Ready to book your exclusive sushi catering event with Sushi Party Atlanta? Contact the
+              Sushi Party Atlanta Event Director today to reserve your next luxury private party, corporate event, or
+              special occasion. Booking Deposits can be made Through Clover.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex-shrink-0 md:px-10 px-5 md:py-10 py-5 items-center justify-center text-center">
+        <a href="https://wa.me/+16362015892?text= "
+          class="inline-block text-lg bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-md uppercase">
+          Click here For Your Booking Deposit through Clover 
+        </a>
+      </div>
+    </div>
+    <div class="container mx-auto px-4 py-8">
+      <!-- Card Container -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Card 1: How to Book -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center bg-orange-500 text-white w-12 h-12 rounded-full mb-4">
+              <i class="fas fa-utensils"></i> <!-- Replace with an icon if needed -->
+            </div>
+            <h2 class="text-xl font-semibold mb-2" style="font-family: myFirstFont;">How to Book</h2>
+            <p class="text-gray-700 mb-4 font-bold">
+              All booking requests must be submitted in writing to ensure they are confirmed.
+            </p>
+          </div>
+          <ul class="list-decimal list-inside space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="flex-none w-2 h-2 mt-2 rounded-full bg-gray-700"></span>
+              <p class="ml-4 text-left">
+                <b>Step 1</b>: Fill out the contact form.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-none w-2 h-2 mt-2 rounded-full bg-gray-700"></span>
+              <p class="ml-4 text-left">
+                <b>Step 2</b>: Choose your desired event date.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-none w-2 h-2 mt-2 rounded-full bg-gray-700"></span>
+              <p class="ml-4 text-left">
+                <b>Step 3</b>: Select your event type (private dining, corporate event, special occasion).
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-none w-2 h-2 mt-2 rounded-full bg-gray-700"></span>
+              <p class="ml-4 text-left">
+                <b>Step 4</b>: Include your message.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-none w-2 h-2 mt-2 rounded-full bg-gray-700"></span>
+              <p class="ml-4 text-left">
+                <b>Step 5</b>: We will provide you with an estimated quote.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-none w-2 h-2 mt-2 rounded-full bg-gray-700"></span>
+              <p class="ml-4 text-left">
+                <b>Step 6</b>Submit your deposit to confirm the reservation.
+              </p>
+            </li>
+          </ul>
+          <div class="mt-4">
+            <video controls class="w-full rounded-lg">
+              <source src="./assets/videos/571876_Sushi_Food_1920x1080.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="flex-shrink-0 md:px-10 px-5 md:py-10 py-5 items-center justify-center text-center">
+            <a href="https://wa.me/+16362015892?text= "
+              class="inline-block text-lg bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-md uppercase">
+              Contact Form
+            </a>
+          </div>
+        </div>
+  
+        <!-- Card 2: Booking Policy -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center bg-orange-500 text-white w-12 h-12 rounded-full mb-4">
+              <i class="fas fa-calendar-check"></i> <!-- Replace with an icon if needed -->
+            </div>
+            <h2 class="text-xl font-semibold mb-2" style="font-family: myFirstFont;">Our Booking Policy</h2>
+          </div>
+          <ul class="list-none space-y-4 text-gray-700">
+            <li class="flex items-start">
+              <span class="flex-none w-2 h-2 mt-2 rounded-full bg-gray-700"></span>
+              <p class="ml-4 text-left">
+                Please book your event as soon as possible to secure the date.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-none w-2 h-2 mt-2 rounded-full bg-gray-700"></span>
+              <p class="ml-4 text-left">
+                A deposit of <span class="font-bold">50%</span> based on your estimated total bill is required to secure the date. This will be applied toward the final invoice total.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-none w-2 h-2 mt-2 rounded-full bg-gray-700"></span>
+              <p class="ml-4 text-left">
+                Final payment is due no later than <span class="font-bold">14 days</span> before your event.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-none w-2 h-2 mt-2 rounded-full bg-gray-700"></span>
+              <p class="ml-4 text-left">
+                Final guest counts, menu selections, or changes are due no later than <span class="font-bold">14 days</span> before the event.
+              </p>
+            </li>
+          </ul>          
+          <div class="mt-4 text-gray-700">
+            <h3 class="font-semibold">Cancellation Policy:</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li class="flex items-start">
+                <span class="flex-none w-2 h-2 mt-2 rounded-full bg-gray-700"></span>
+                <p class="ml-4 text-left">
+                  Cancellations up to two weeks before your event: 50% of your required deposit will be refunded.
+                </p>
+              </li>
+              <li class="flex items-start">
+                <span class="flex-none w-2 h-2 mt-2 rounded-full bg-gray-700"></span>
+                <p class="ml-4 text-left">
+                  Cancellations received less than two weeks before your event will forfeit the entire required deposit.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <p class="text-gray-700 mt-4">
+            Booking Deposits Can Be Made Through Clover.
+          </p>
+          <!-- <div class="text-center mt-4">
+            <a
+              href="#"
+              class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg inline-block font-semibold"
+            >
+              Contact Form
+            </a>
+          </div> -->
+          <div class="flex-shrink-0 md:px-10 px-5 md:py-10 py-5 items-center justify-center text-center">
+            <a href="https://wa.me/+16362015892?text= "
+            class="inline-block text-lg bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-md uppercase">
+            Contact Form
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-black text-white">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+          <p class="uppercase text-xl font-bold mb-4">About Us</p>
+          <p class="text-lg">we served japanase food since 2019 and grow as holding company under name kasabi, we
+            located at st peters, warrenton , hazelwood and festus, at kasabi quality and innovation are at the heart
+            of what we do. Our commitment to using the premium ingredients and adding a contemporary twist to classic
+            styles has distinguished us in the culinary landscape. We take pride in ensuring that each event we cater
+            is a showcase of our love for sushi, offering a unique and memorable dining experience.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 justify-right flex-shrink-0">
+          <div>
+            <ul class="font-medium">
+              <li class="mb-4">
+                <a href="https://flowbite.com/" class="hover:underline">About</a>
+              </li>
+              <li class="mb-4">
+                <a href="https://flowbite.com/" class="hover:underline">Our Services</a>
+              </li>
+              <li>
+                <a href="https://tailwindcss.com/" class="hover:underline">Meet Our Chef</a>
+              </li>
+              <li class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  class="w-6 h-6 mr-2">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M16 12h2a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v3a2 2 0 002 2h2m4 4h4m0 0l4-4m-4 4l-4-4">
+                  </path>
+                </svg>
+                <a href="https://tailwindcss.com/" class="hover:underline">sushipartymissouri@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Galley</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Get Started</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Call Now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center">© 2024 <a href="https://flowbite.com/"
+            class="hover:underline">Sushi Party Missouri</a>. All Rights Reserved.
+        </span>
+        <div class="flex mt-4 sm:justify-center sm:mt-0">
+          <a href="#" class="text-gray-500 hover:text-gray-900">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 8 19">
+              <path fill-rule="evenodd"
+                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">Facebook page</span>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 21 16">
+              <path
+                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+            </svg>
+            <span class="sr-only">Discord community</span>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 20 17">
+              <path fill-rule="evenodd"
+                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">Twitter page</span>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">GitHub account</span>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">Dribbble account</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  </div>
+</body>
+<script>
+  const imageGallery = document.getElementById("image-gallery");
+
+  // Loop untuk menghasilkan 200 gambar
+  for (let i = 1; i <= 16; i++) {
+    // Membuat elemen div
+    const div = document.createElement("div");
+
+    // Membuat elemen img
+    const img = document.createElement("img");
+    img.className = "h-auto max-w-full rounded-lg";
+    img.loading = "lazy";
+
+    // Mengatur src sesuai nomor urut
+    // img.src='.'
+    img.src = `./assets/images/susi_image_${i}.webp`;
+    img.alt = `image ke ${i}`
+
+    // Menambahkan img ke dalam div
+    div.appendChild(img);
+    // Menambahkan div ke dalam gallery
+    imageGallery.appendChild(div);
+  }
+
+  for (let i = 100; i <= 135; i++) {
+    // Membuat elemen div
+    const div = document.createElement("div");
+
+    // Membuat elemen img
+    const img = document.createElement("img");
+    img.className = "h-auto max-w-full rounded-lg";
+    img.loading = "lazy";
+
+    // Mengatur src sesuai nomor urut
+    // img.src='.'
+    img.src = `./assets/images/susi_image_${i}.webp`;
+
+    // Menambahkan img ke dalam div
+    div.appendChild(img);
+    // Menambahkan div ke dalam gallery
+    imageGallery.appendChild(div);
+  }
+</script>
+
+</html>

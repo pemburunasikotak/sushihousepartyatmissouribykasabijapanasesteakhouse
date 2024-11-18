@@ -8,10 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <title>sushihousepartyatmissouribykasabijapanasesteakhouse</title>
-  <link rel="icon" href="https://hilmirazib.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/assets/images/wasabi.jpg" type="image/x-icon">
+  <link rel="icon"
+    href="https://hilmirazib.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/assets/images/wasabi.jpg"
+    type="image/x-icon">
   <script>
     tailwind.config = {
       theme: {
@@ -30,7 +30,7 @@
   <style>
     @font-face {
       font-family: 'myFirstFont';
-      src: url('https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/assets/font/Fonts/WEB/fonts/Gambarino-Regular.woff') format('woff2'), ;
+      src: url('https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/assets/font/Fonts/WEB/fonts/Gambarino-Regular.woff2') format('woff2'), ;
     }
 
     .rotate-image {
@@ -100,7 +100,7 @@
           </a>
         </li>
         <li class="">
-          <a href="https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/boking-deposite">
+          <a href="https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/gallery">
             booking deposit
           </a>
         </li>
@@ -135,7 +135,7 @@
       <div class="absolute inset-0 bg-black bg-opacity-50 z-[-1]"></div>
 
       <div class="relative z-10 text-white text-center">
-        <h1 class="text-6xl font-bold mb-6" style="font-family: myFirstFont;">Embrace the Art of <br> Celebration</h1>
+        <h1 class="text-6xl font-bold mb-6">Embrace the Art of <br> Celebration</h1>
         <p class="text-2xl mb-6">
           Experience Unforgettable Moments with Sushi House Party<br />
           - Over 20 Years of Experience! -
@@ -166,28 +166,109 @@
             </li>
           </ul>
         </div>
-        <!-- Button for Booking Modal -->
         <a href="#" class="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-md uppercase">
           Book Your Party Now!
         </a>
       </div>
     </section>
-    <!-- section about -->
+
+    <!-- your gallery -->
+    <div id="header" class="py-12 px-7 text-center">
+      <!-- gallery -->
+     <div class="">
+      <div class="max-w-4xl mx-auto bg-white p-8 shadow-lg rounded-sm">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Reservations and Bookings</h1>
+        <p class="text-gray-600 mb-6">
+          Ready to book your exclusive sushi catering event with <span class="font-semibold">Sushi Party Atlanta</span>? Contact our Sushi Party Event Director today to reserve your next private party, corporate event, or special occasion. We travel within and outside of <span class="font-semibold">Atlanta, Georgia</span> to bring the best sushi experience to you. Please fill out the form below, and we will get back to you shortly.
+        </p>
+        <h2 class="text-2xl font-bold text-gray-700 mb-4 text-left">Contact Form</h2>
+        <form action="#header" method="get" class="space-y-6">
+          <!-- Name Fields -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <input type="text" id="firstName" name="firstName" class="mt-1 block w-full bg-gray-200 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="First Name">
+            </div>
+            <div>
+              <input type="text" id="lastName" name="lastName" class="mt-1 block w-full bg-gray-200 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Last Name">
+            </div>
+          </div>
     
-    <!-- connect with us -->
-    <div class="py-12 px-7 bg-black">
-      <div class="p-5 flex flex-col md:flex-row items-center justify-center md:gap-10 gap-5 bg-white rounded-md">
-        <div class="text-center">
-          <p class="text-3xl font-bold mb-4" style="font-family: myFirstFont;">Comming soon Maps</p>
-         
+          <!-- Phone and Email -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <input type="tel" id="phone" name="phone" class="mt-1 block w-full bg-gray-200 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Phone Number">
+            </div>
+            <div>
+              <input type="email" id="email" name="email" class="mt-1 block w-full bg-gray-200 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Email Address">
+            </div>
+          </div>
+    
+          <!-- Event Details -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <input type="text" id="location" name="location" class="mt-1 block w-full bg-gray-200 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Event Location">
+            </div>
+            <div>
+              <input type="date" id="date" name="date" class="mt-1 block w-full bg-gray-200 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+            </div>
+          </div>
+    
+          <!-- Number of Guests -->
+          <div>
+            <input type="number" id="guests" name="guests" class="mt-1 block w-full bg-gray-200 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Number of Guests">
+          </div>
+    
+          <!-- Message -->
+          <div>
+            <textarea id="message" name="message" rows="4" class="mt-1 block w-full bg-gray-200 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-2" placeholder="Message"></textarea>
+          </div>
+    
+          <!-- Captcha -->
+          <div class="flex items-center space-x-4">
+            <label class="block text-sm font-medium text-gray-700">
+              5 + 10 =
+            </label>
+            <input type="text" name="captcha" class="mt-1 block w-20 bg-gray-200 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+            <button type="submit" class="w-full sm:w-auto bg-blue-600 text-white px-6 py-2 rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Submit</button>
+          </div>
+        </form>
+      </div>
+     </div>
+    </div>
+    <div class="pb-8">
+      <!-- Contact Information Section -->
+      <div class="max-w-4xl mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8 items-stretch">
+        <!-- Video Section -->
+        <div class="flex">
+          <video class="w-full h-full object-cover rounded-sm shadow-sm" controls>
+            <source src="./assets/videos/571876_Sushi_Food_1920x1080.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="flex flex-col justify-between">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: myFirstFont;">Contact Information</h2>
+          <div class="bg-gray-100 p-6 rounded-sm shadow-sms">
+            <h3 class="text-lg font-semibold text-gray-700 mb-2" style="font-family: myFirstFont;">Email Us</h3>
+            <p class="text-gray-600 mb-2">
+              Contact Sushi Party missouri for sushi catering bookings and private Sushi Chefs inquiries.
+            </p>
+            <p class="text-blue-600 font-medium">
+              sushipartymissouri@gmail.com
+            </p>
+            <p class="text-gray-600 mt-4">
+              <span class="font-semibold">Location:</span> 258 mid rivers center. St peters Mo 63376
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
+    </div>
     <!-- footer -->
     <footer class="bg-black text-white">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div class="md:flex md:justify-between gap-20">
+        <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <p class="uppercase text-xl font-bold mb-4">About Us</p>
             <p class="text-lg">we served japanase food since 2019 and grow as holding company under name kasabi, we
@@ -205,7 +286,7 @@
                 <li class="mb-4">
                   <a href="https://flowbite.com/" class="hover:underline">Our Services</a>
                 </li>
-                <li class="mb-4">
+                <li>
                   <a href="https://tailwindcss.com/" class="hover:underline">Meet Our Chef</a>
                 </li>
                 <li class="flex">
@@ -226,7 +307,7 @@
                   <a href="#" class="hover:underline">Galley</a>
                 </li>
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Location Service</a>
+                  <a href="#" class="hover:underline">Get Started</a>
                 </li>
                 <li>
                   <a href="#" class="hover:underline">Call Now</a>
@@ -292,51 +373,49 @@
 
 
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-  <script>
-    // Inisialisasi AOS untuk animasi fade-in
-    AOS.init({
-      once: true, // Memastikan fade-in hanya terjadi sekali
-    });
-
-    // Function untuk mengecek apakah elemen berada di viewport
-    function isInViewport(element) {
-      const rect = element.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-    }
-
-    function rotateImage(image) {
-      image.classList.add('rotate-active');
-      setTimeout(() => {
-        image.classList.remove('rotate-active');
-      }, 5000); // Hapus class setelah 5 detik, sesuai durasi animasi CSS
-    }
-
-    const rotatingElements = document.querySelectorAll('.rotate-image');
-    let currentIndex = 0;
-
-    function checkScroll() {
-      rotatingElements.forEach((element, index) => {
-        if (isInViewport(element) && index === currentIndex) {
-          rotateImage(element);
-          currentIndex = (currentIndex + 1) % rotatingElements.length; // Berpindah ke elemen berikutnya
-        }
-      });
-    }
-
-    window.addEventListener('scroll', checkScroll);
-
-    // Jalankan pengecekan saat halaman pertama kali di-load
-    document.addEventListener('DOMContentLoaded', checkScroll);
-  </script>
-
 </body>
+<script>
+  const imageGallery = document.getElementById("image-gallery");
+
+  // Loop untuk menghasilkan 200 gambar
+  for (let i = 1; i <= 16; i++) {
+    // Membuat elemen div
+    const div = document.createElement("div");
+
+    // Membuat elemen img
+    const img = document.createElement("img");
+    img.className = "h-auto max-w-full rounded-lg";
+    img.loading = "lazy";
+
+    // Mengatur src sesuai nomor urut
+    // img.src='.'
+    img.src = `./assets/images/susi_image_${i}.webp`;
+    img.alt=`image ke ${i}`
+
+    // Menambahkan img ke dalam div
+    div.appendChild(img);
+    // Menambahkan div ke dalam gallery
+    imageGallery.appendChild(div);
+  }
+  
+  for (let i = 100; i <= 135; i++) {
+    // Membuat elemen div
+    const div = document.createElement("div");
+
+    // Membuat elemen img
+    const img = document.createElement("img");
+    img.className = "h-auto max-w-full rounded-lg";
+    img.loading = "lazy";
+
+    // Mengatur src sesuai nomor urut
+    // img.src='.'
+    img.src = `./assets/images/susi_image_${i}.webp`;
+
+    // Menambahkan img ke dalam div
+    div.appendChild(img);
+    // Menambahkan div ke dalam gallery
+    imageGallery.appendChild(div);
+  }
+</script>
 
 </html>
