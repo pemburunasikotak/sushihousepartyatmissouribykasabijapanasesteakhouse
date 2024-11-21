@@ -111,7 +111,7 @@
           </a>
         </li>
         <li class="">
-          <a href="https://wa.me/+16362015892?text=Hi there! 👋 Ready to dive into delicious sushi or need a little help with your order? Just tap the link below to chat with us on WhatsApp! We'll be right here to answer any questions or help you roll into something amazing. 🍣🥢" target="_blank">
+          <a href="https://wa.me/+16362015892?text=Hey there! I'm thinking about treating myself to some yummy sushi. My name is [Your Name], and I'm planning a special event for [Number of People] people. Can you give me some details about making a reservation here? 🍣🥢" target="_blank">
             Call Now!
           </a>
         </li>
@@ -128,7 +128,7 @@
         Your browser does not support the video tag.
       </video> -->
       <video class="absolute top-0 left-0 w-full h-full object-cover z-[-1]" autoplay muted loop>
-        <source src="./assets/videos/571876_Sushi_Food_1920x1080.mp4" type="video/mp4">
+        <source src="./assets/videos/571876_Sushi_Food_1920x1080.webm" type="video/mp4">
         Your browser does not support the video tag.
       </video>
 
@@ -299,7 +299,7 @@
   const imageGallery = document.getElementById("image-gallery");
 
   // Loop untuk menghasilkan 200 gambar
-  for (let i = 1; i <= 16; i++) {
+  for (let i = 1; i <= 26; i++) {
     // Membuat elemen div
     const div = document.createElement("div");
 
@@ -310,7 +310,7 @@
 
     // Mengatur src sesuai nomor urut
     // img.src='.'
-    img.src = `./assets/images/susi_image_${i}.webp`;
+    img.src = `./assets/images/gambar_ke_${i}.jpg`;
     img.alt=`image ke ${i}`
 
     // Menambahkan img ke dalam div
@@ -319,24 +319,24 @@
     imageGallery.appendChild(div);
   }
   
-  for (let i = 100; i <= 135; i++) {
-    // Membuat elemen div
-    const div = document.createElement("div");
+  // for (let i = 100; i <= 135; i++) {
+  //   // Membuat elemen div
+  //   const div = document.createElement("div");
 
-    // Membuat elemen img
-    const img = document.createElement("img");
-    img.className = "h-auto max-w-full rounded-lg";
-    img.loading = "lazy";
+  //   // Membuat elemen img
+  //   const img = document.createElement("img");
+  //   img.className = "h-auto max-w-full rounded-lg";
+  //   img.loading = "lazy";
 
-    // Mengatur src sesuai nomor urut
-    // img.src='.'
-    img.src = `./assets/images/susi_image_${i}.webp`;
+  //   // Mengatur src sesuai nomor urut
+  //   // img.src='.'
+  //   img.src = `./assets/images/susi_image_${i}.webp`;
 
-    // Menambahkan img ke dalam div
-    div.appendChild(img);
-    // Menambahkan div ke dalam gallery
-    imageGallery.appendChild(div);
-  }
+  //   // Menambahkan img ke dalam div
+  //   div.appendChild(img);
+  //   // Menambahkan div ke dalam gallery
+  //   imageGallery.appendChild(div);
+  // }
 </script>
 
 </html>
