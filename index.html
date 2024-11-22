@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,16 +31,13 @@
       font-family: 'myFirstFont';
       src: url('https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/assets/font/Fonts/WEB/fonts/Gambarino-Regular.woff2') format('woff2'), ;
     }
-
     .rotate-image {
       transform: rotate(0deg);
-      /* Awalnya tidak berputar */
       transition: transform 5s ease-in-out;
     }
 
     .rotate-active {
       transform: rotate(360deg);
-      /* Berputar 360 derajat */
     }
   </style>
   <title>Document</title>
@@ -61,7 +57,6 @@
       </svg>
     </button>
   </div>
-
   <aside id="default-sidebar"
     class="fixed top-0 left-0 z-40 w-[18.75rem] h-screen transition-transform -translate-x-full lg:translate-x-0 p-5 bg-[#F7F7F7]"
     aria-label="Sidebar">
@@ -105,11 +100,6 @@
             booking deposit
           </a>
         </li>
-        <!-- <li class="">
-          <a href="https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/our-chef">
-            Meet Our Chef
-          </a>
-        </li> -->
         <li class="">
           <a href="https://pemburunasikotak.github.io/sushihousepartyatmissouribykasabijapanasesteakhouse/location-service">
             Location Service
@@ -123,33 +113,19 @@
       </ul>
     </div>
   </aside>
-
   <div class="lg:ml-[18.75rem] overflow-hidden">
-    <!-- section hero -->
     <section class="relative h-screen flex items-center justify-center">
-      <!-- Video Background -->
-      <!-- <video class="absolute top-0 left-0 w-full h-full object-cover z-[-1]" autoplay muted loop>
-        <source
-          src="./assets/videos/2162695_Festival_Food_1920x1080.mp4"
-          type="video/mp4">
-        Your browser does not support the video tag.
-      </video> -->
       <video class="absolute top-0 left-0 w-full h-full object-cover z-[-1]" autoplay muted loop>
         <source src="./assets/videos/571876_Sushi_Food_1920x1080.webm" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-
-      <!-- Overlay dengan opacity -->
       <div class="absolute inset-0 bg-black bg-opacity-50 z-[-1]"></div>
-
       <div class="relative z-10 text-white text-center">
         <h1 class="text-6xl font-bold mb-6" style="font-family: myFirstFont;">Embrace the Art of <br> Celebration</h1>
         <p class="text-2xl mb-6">
           Experience Unforgettable Moments with Sushi House Party<br />
           - Over 20 Years of Experience! -
         </p>
-
-        <!-- List Icon -->
         <div class="flex justify-center  mb-14">
           <ul class="space-y-6">
             <li class="flex items-center space-x-6">
@@ -174,29 +150,27 @@
             </li>
           </ul>
         </div>
-        <!-- Button for Booking Modal -->
         <a href="https://wa.me/+16362015892?text=" target="_blank" class="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-md uppercase">
           Book Your Party Now!
         </a>
       </div>
     </section>
-    <!-- section about -->
     <div class="md:px-28 px-10 md:py-20 py-10">
-      <div class="flex items-center text-center justify-center gap-10 flex-col md:flex-row">
-        <img
-          src="./assets/images/seafood-sushi-dish-with-details-simple-black-background.jpg"
-          alt="" class="h-4/5 md:w-1/3 w-1/2 rounded-md">
-        <div class="space-y-5">
+      <div class="flex items-center text-center justify-center gap-5 flex-col md:flex-row">
+        <div class="w-full md:w-1/3 rounded-md">
+          <video controls class="rounded-sm w-full h-auto">
+            <source src="./assets/videos/vidio_home.webm" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="space-y-5 w-full md:w-1/2">
           <p class="font-bold text-3xl" style="font-family: myFirstFont;">Welcome to Sushi Party MISSOURI</p>
-          <p class="text-lg">Where we invite you to experience a night of us take care
-            for your dining experiences.
-            At Sushi House Party we serving everything so fresh and sliceing fresh fish in front of your family/clients
-            we believe
-            every gathering is an opportunity to create memories. Our premium sushi is more than a meal it's a palette
-            of flavors,
-            artfully crafted to elevate your home gatherings and celebrations. With us, you can relax and savor the
-            moment,
-            indulging in the party as much as your guests
+          <p class="text-lg">
+            Where we invite you to experience a night of us take care for your dining experiences.
+            At Sushi House Party we serving everything so fresh and slicing fresh fish in front of your family/clients.
+            We believe every gathering is an opportunity to create memories. Our premium sushi is more than a meal—it's a palette
+            of flavors, artfully crafted to elevate your home gatherings and celebrations. With us, you can relax and savor the
+            moment, indulging in the party as much as your guests.
           </p>
           <a href="#"
             class="inline-block text-lg bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-md uppercase">
@@ -204,6 +178,7 @@
           </a>
         </div>
       </div>
+      
     </div>
     <div class="relative py-20">
       <div
@@ -238,9 +213,6 @@
           <p class="text-lg mb-10">Transform your party with the dynamic flair of a live sushi bar. Watch as our chefs
             craft exquisite sushi creations before your eyes, offering not just a meal, but a mesmerizing performance
             that will captivate your guests. </p>
-          <!-- <button type="button" onclick="document.querySelector('#galery').scrollIntoView({ behavior: 'smooth' });"
-            class="text-red-600 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-sm text-sm py-3 px-6 text-center me-2 mb-2 uppercase">
-            View Our Sushi Bar Gallery!</button> -->
           <button type="button" onclick="document.querySelector('#galery').scrollIntoView({ behavior: 'smooth' });"
             class="text-red-600 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-sm text-sm py-3 px-6 text-center me-2 mb-2 uppercase">
             View Our Sushi Bar Gallery!
